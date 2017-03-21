@@ -1,0 +1,16 @@
+{
+  "extends" : "../.eslintrc",
+  "env"     : {
+    "mocha" : true
+  },
+  "globals" : {
+    "expect" : false,
+    "should" : false,
+    "sinon"  : false
+  },
+  "rules": {
+    "max-nested-callbacks": [1, 4],
+    "no-var"  : 0,
+    "no-undef": 0
+  }
+}

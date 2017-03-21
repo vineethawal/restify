@@ -1,0 +1,47 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard"
+  ],
+  "plugins" : ["promise"],
+  "env"     : {},
+  {
+    "parserOptions": {
+      "ecmaFeatures": {}
+    }
+  },
+  "globals" : {
+    "logger": true,
+    "__RESOURCES__": true,
+    "__DEV__": true,
+    "__TEST__": true,
+    "Raven": true,
+    "__SENTRY_BROWSER_TOKEN__": true,
+    "__VERSION__": true
+  },
+  "rules": {
+    "camelcase": 2,
+    "constructor-super": 2,
+    "comma-style": [2, "last"],
+    "comma-dangle": [2, "always-multiline"],
+    "eol-last": 2,
+    "indent"  : [2, 2],
+    "key-spacing": [2, {"afterColon": true}],
+    "no-var"  : 2,
+    "no-const-assign": 2,
+    "no-console": ["error"],
+    "max-nested-callbacks": [2, 3],
+    "prefer-const": 2,
+    "semi"    : [2, "never"],
+    "space-infix-ops": 0,
+    "max-len": [2, 120, 2],
+    "no-new": 0,
+    "no-path-concat": 0,
+    "promise/param-names": 2,
+    "promise/always-return": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-native": 0,
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"]
+  }
+}
